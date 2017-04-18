@@ -1,0 +1,16 @@
+Roboy (Clarence) Animation Data
+
+Idle
+1-180
+
+Walk
+241-360
+
+Run
+421-510
+
+Jump
+601-660
+
+Shoot
+721-840?(Ends earlier)

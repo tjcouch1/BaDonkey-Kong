@@ -1,0 +1,10 @@
+Penguin Animation Data
+
+Idle
+1-180
+
+Give Item
+241-330
+
+Waddle
+391-428

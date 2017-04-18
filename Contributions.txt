@@ -1,0 +1,70 @@
+TJ Couch
+=======================
+- Assets
+	- Prefabs
+		- BarrelGreen
+	- Scenes
+		- Level Layout
+    - Scripts
+	- Visuals
+	- Sprites
+	- Models
+		- BaDonkey Kong
+		- Level
+		- LandPlatform
+		- MetalPlatform
+	- Textures
+		- BaDonkey Kong
+	- Rigs and Animations
+		- BaDonkey Kong
+			- Idle
+			- Run
+			- Walk
+			- Attack
+		- Clarence
+			- Idle
+			- Walk
+			- Run
+			- Jump
+			- Shoot
+		- Penguin
+			- Idle
+			- Give Item
+			- Waddle
+
+
+Molly Sulcer
+=======================
+- Assets
+	- Prefabs
+	- Scenes
+	- Scripts
+	- Models
+		- Penguin
+
+
+Clark Chambers
+======================
+- Assets
+	- Prefabs
+	- Scenes
+	- Scripts
+	- Sprites
+	- Models
+		- Clarence
+
+
+
+External Tools and Assets ***NEED TO BE CONFIRMED BY DR. PENG
+=======================
+- Tools
+	- AutoDesk Maya 2015 Educational
+- Assets
+	- Standard Assets
+		- Scripts
+	- Sprites
+	- Models, Textures, and Animations
+		- All models have credits attributed in their respective Credits.txt files.
+	- Audio
+
+
