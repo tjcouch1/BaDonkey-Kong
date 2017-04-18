@@ -38,7 +38,13 @@ Molly Sulcer
 - Assets
 	- Prefabs
 	- Scenes
+		-credit
+		-help
+		-mainMenu
+		-story
 	- Scripts
+		-LoadonClick
+		-QuitOnClick
 	- Models
 		- Penguin
 
