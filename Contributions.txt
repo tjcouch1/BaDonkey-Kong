@@ -76,5 +76,5 @@ External Tools and Assets ***NEED TO BE CONFIRMED BY DR. PENG
 	- Models, Textures, and Animations
 		- All models have credits attributed in their respective Credits.txt files.
 	- Audio
-
+	- Font: http://www.dafont.com/obelixpro.font
 
