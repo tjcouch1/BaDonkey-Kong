@@ -3,6 +3,9 @@ TJ Couch
 - Assets
 	- Prefabs
 		- BarrelGreen
+		- BarrelRed
+		- BarrelBlue
+		- BarrelBlack
 	- Scenes
 		- Level Layout
     - Scripts
