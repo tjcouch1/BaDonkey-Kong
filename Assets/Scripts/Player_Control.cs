@@ -2,96 +2,128 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_Control : MonoBehaviour {
-	public float walkSpeed = 2.0f;
-	public float runSpeed = 4.0f;
+public class Player_Control : MonoBehaviour
+{
+	public float walkSpeed = 5.0f;
+	public float runSpeed = 10.0f;
+	public float jumpForce = 200f;
+	public float lookSensitivity = 10f;
 
 	private float moveSpeed;
-	private Vector3 v3_moveDirection; // the actual moving direction
+	private Vector3 moveDir;// the actual moving direction
 
-	private Vector3 v3_forward; //Forward Direction of the character
-	private Vector3 v3_right; //Right Direction of the character
+	private Vector3 forwardDir;//Forward Direction of the character
+	private Vector3 rightDir;//Right Direction of the character
 
 	// follow-up camera param
-	private Vector3 v3_cam_dir;
-	private float cam_distance;
+	private Vector3 cameraDir;
+	private float camDistance;
 
 	private Animator anim;
 
-	// Use this for initialization
-	void Start () {
+	private Rigidbody rigidbody;
+
+	void Start()
+	{
 		moveSpeed = 0;
-		v3_moveDirection = Vector3.zero;
-		v3_forward = Vector3.zero;
-		v3_right = Vector3.zero;
+		moveDir = Vector3.zero;
+		forwardDir = Vector3.zero;
+		rightDir = Vector3.zero;
 
-		v3_cam_dir = Camera.main.transform.position - transform.position;
-		cam_distance = v3_cam_dir.magnitude;
-		v3_cam_dir.Normalize ();
+		cameraDir = Camera.main.transform.position - transform.position;
+		camDistance = cameraDir.magnitude;
+		cameraDir.Normalize();
 
-		anim = GetComponent<Animator> ();
+		anim = GetComponent<Animator>();
+		rigidbody = GetComponent<Rigidbody>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
+	void Update()
+	{
+		//Get forward direction of the character
+		forwardDir = Camera.main.transform.TransformDirection(Vector3.forward);
+		forwardDir.y = 0;
+		forwardDir.Normalize();
 
-		if(Input.GetMouseButton(0)) { // mouse left button
-			moveSpeed = 0.0f;
-			if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A) )
-				transform.rotation *= Quaternion.Euler(0, -5, 0);
-			if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
-				transform.rotation *= Quaternion.Euler(0, 5, 0);	
-			anim.SetBool ("ShootBool", true);
+		// Always orthogonal to the forward direction vector
+		rightDir = Vector3.Cross(Vector3.up, forwardDir);
+		rightDir.Normalize();
+
+		if (Input.GetMouseButton(0))
+		{
+			anim.SetBool("ShootBool", true);
+			moveDir = forwardDir;
+			moveSpeed = 0;
+			//rigidbody.velocity = new Vector3(0, rigidbody.velocity.y, 0);
 		}
+		else//update the position if not shooting
+		{
+			anim.SetBool("ShootBool", false);
 
-		else {
-			//Get forward direction of the character
-			v3_forward = Camera.main.transform.TransformDirection (Vector3.forward);
-
-			//Make sure that vertical direction equals zero 
-			v3_forward.y = 0;  
-
-			v3_forward.Normalize ();
-
-			// Always orthogonal to the forward direction vector
-			v3_right = Vector3.Cross (Vector3.up, v3_forward);
-			v3_right.Normalize ();
-
-			float f_hor = Input.GetAxis ("Horizontal");
-			float f_ver = Input.GetAxis ("Vertical");
+			float moveHorizontal = 0;
+			if (Input.GetKey(KeyCode.A))
+				moveHorizontal -= 1;
+			if (Input.GetKey(KeyCode.D))
+				moveHorizontal += 1;
+			float moveVertical = 0;
+			if (Input.GetKey(KeyCode.S))
+				moveVertical -= 1;
+			if (Input.GetKey(KeyCode.W))
+				moveVertical += 1;
 
 			//Get the move direction
-			v3_moveDirection = (f_hor * v3_right) + (f_ver * v3_forward);
-			v3_moveDirection = v3_moveDirection.normalized;
+			moveDir = (moveHorizontal * rightDir) + (moveVertical * forwardDir);
+			moveDir.Normalize();
 
 			// Calculate actual movement
-			if (v3_moveDirection.magnitude < 0.01 && v3_moveDirection.magnitude > -0.01) {
+			if (moveDir.magnitude < 0.01 && moveDir.magnitude > -0.01)
 				moveSpeed = 0.0f;
-			} else if (Input.GetKey (KeyCode.LeftShift) || Input.GetKey (KeyCode.RightShift)) {
-				moveSpeed = runSpeed;
-			} else {
+			else if (Input.GetKey(KeyCode.LeftShift))
 				moveSpeed = walkSpeed;
+			else moveSpeed = runSpeed;
+
+			transform.position += moveDir * moveSpeed * Time.deltaTime;
+			//rigidbody.velocity = new Vector3(moveDir.x * moveSpeed * Time.deltaTime, rigidbody.velocity.y, moveDir.z * moveSpeed * Time.deltaTime);
+			//rigidbody.AddForce(new Vector3(moveDir.x * moveSpeed * Time.deltaTime, 0, moveDir.z * moveSpeed * Time.deltaTime) * 50);
+
+			//jump
+			if (Input.GetKeyDown(KeyCode.Space))
+			{
+				rigidbody.AddForce(Vector3.up * jumpForce);
 			}
-
-			anim.SetFloat ("Speed", Mathf.Abs (moveSpeed));
-
-			//update the position
-			transform.position += v3_moveDirection * moveSpeed * Time.deltaTime;
-
-			// update the rotation
-			if (v3_moveDirection != Vector3.zero) {
-				transform.rotation = Quaternion.LookRotation (v3_moveDirection);
-			} 
 		}
-		if (Input.GetMouseButtonUp (0)) {
-			anim.SetBool ("ShootBool", false);
-		}
+
+		// update the rotation
+		if (moveDir != Vector3.zero)
+			transform.rotation = Quaternion.LookRotation(moveDir);
+
+		anim.SetFloat("Speed", Mathf.Abs(moveSpeed));
 	}
 
 	void LateUpdate()
 	{
-		// create follow-up camera
-		Camera.main.transform.position = gameObject.transform.position + v3_cam_dir*cam_distance;
+		//left and right
+		Camera.main.transform.position = gameObject.transform.position + cameraDir * camDistance;
+		Camera.main.transform.RotateAround(transform.position, Vector3.up, Input.GetAxis("Mouse X") * lookSensitivity * Time.deltaTime);
+
+		//up and down
+		//constrain to -7.5 to 50
+		//detect direction rotating, if messes up from it, set it back to good transform
+		GameObject cam = new GameObject();
+		cam.transform.position = Camera.main.transform.position;
+		cam.transform.rotation = Camera.main.transform.rotation;
+		cam.transform.RotateAround(transform.position, Camera.main.transform.TransformDirection(Vector3.right), Input.GetAxis("Mouse Y") * -lookSensitivity * Time.deltaTime);
+		//Camera.main.transform.RotateAround(transform.position, Camera.main.transform.TransformDirection(Vector3.right), Input.GetAxis("Mouse Y") * -lookSensitivity * Time.deltaTime);
+		if (cam.transform.localEulerAngles.x > -7.5 && cam.transform.localEulerAngles.x < 50)
+		{
+			Camera.main.transform.position = cam.transform.position;
+			Camera.main.transform.rotation = cam.transform.rotation;
+		}
+
+		//Camera.main.transform.localEulerAngles = new Vector3(Mathf.Clamp(Camera.main.transform.rotation.x, -7.5f, 50f), Camera.main.transform.localEulerAngles.y, Camera.main.transform.localEulerAngles.z);
+		cameraDir = Camera.main.transform.position - transform.position;
+		cameraDir.Normalize();
+		//Camera.main.transform.rotation *= Quaternion.Euler(Vector3.up * Input.GetAxis("Mouse X"));
+		Camera.main.transform.position = gameObject.transform.position + cameraDir * camDistance;
 	}
 }

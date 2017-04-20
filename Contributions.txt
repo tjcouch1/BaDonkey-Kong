@@ -7,11 +7,13 @@ TJ Couch
 		- BarrelBlue
 		- BarrelBlack
 		- Clarence
+		- Key
 	- Scenes
 		- Level Layout
     - Scripts
 		- Player_Control
 		- Camera_Control
+		- Gun_Control
 	- Visuals
 	- Sprites
 		- KeyIcon
