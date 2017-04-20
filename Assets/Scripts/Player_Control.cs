@@ -108,17 +108,19 @@ public class Player_Control : MonoBehaviour
 
 		//up and down
 		//constrain to -7.5 to 50
+		Camera.main.transform.RotateAround(transform.position, Camera.main.transform.TransformDirection(Vector3.right), 
+			Mathf.Clamp(Input.GetAxis("Mouse Y") * -lookSensitivity * Time.deltaTime, Mathf.Clamp(-7.5f - Camera.main.transform.localEulerAngles.x, -100, 0), 50f - Camera.main.transform.localEulerAngles.x));
+
 		//detect direction rotating, if messes up from it, set it back to good transform
-		GameObject cam = new GameObject();
+		/*GameObject cam = new GameObject();
 		cam.transform.position = Camera.main.transform.position;
 		cam.transform.rotation = Camera.main.transform.rotation;
 		cam.transform.RotateAround(transform.position, Camera.main.transform.TransformDirection(Vector3.right), Input.GetAxis("Mouse Y") * -lookSensitivity * Time.deltaTime);
-		//Camera.main.transform.RotateAround(transform.position, Camera.main.transform.TransformDirection(Vector3.right), Input.GetAxis("Mouse Y") * -lookSensitivity * Time.deltaTime);
 		if (cam.transform.localEulerAngles.x > -7.5 && cam.transform.localEulerAngles.x < 50)
 		{
 			Camera.main.transform.position = cam.transform.position;
 			Camera.main.transform.rotation = cam.transform.rotation;
-		}
+		}*/
 
 		//Camera.main.transform.localEulerAngles = new Vector3(Mathf.Clamp(Camera.main.transform.rotation.x, -7.5f, 50f), Camera.main.transform.localEulerAngles.y, Camera.main.transform.localEulerAngles.z);
 		cameraDir = Camera.main.transform.position - transform.position;
