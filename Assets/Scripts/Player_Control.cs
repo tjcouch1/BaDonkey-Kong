@@ -9,6 +9,11 @@ public class Player_Control : MonoBehaviour
 	public float jumpForce = 200f;
 	public float lookSensitivity = 10f;
 
+	public GameObject laserGun;
+	public bool gun = false;
+	public float shootSpeedCap = 1f;
+	private float shootSpeed;
+
 	private float moveSpeed;
 	private Vector3 moveDir;// the actual moving direction
 
@@ -36,6 +41,8 @@ public class Player_Control : MonoBehaviour
 
 		anim = GetComponent<Animator>();
 		rigidbody = GetComponent<Rigidbody>();
+
+		shootSpeed = shootSpeedCap;
 	}
 
 	void Update()
@@ -49,12 +56,28 @@ public class Player_Control : MonoBehaviour
 		rightDir = Vector3.Cross(Vector3.up, forwardDir);
 		rightDir.Normalize();
 
-		if (Input.GetMouseButton(0))
+		if (hasGun())
+			laserGun.GetComponent<Gun_Control>().setVisible(true);
+		else laserGun.GetComponent<Gun_Control>().setVisible(false);
+
+		if (Input.GetMouseButtonDown(0) && hasGun() && !isShooting())
+		{
+			shootSpeed -= .01f;
+			laserGun.GetComponent<Gun_Control>().Fire();
+		}
+
+		if (isShooting())
 		{
 			anim.SetBool("ShootBool", true);
 			moveDir = forwardDir;
 			moveSpeed = 0;
 			//rigidbody.velocity = new Vector3(0, rigidbody.velocity.y, 0);
+
+			anim.SetInteger("Speed", 0);
+
+			shootSpeed -= Time.deltaTime;
+			if (shootSpeed <= 0)
+				shootSpeed = shootSpeedCap;
 		}
 		else//update the position if not shooting
 		{
@@ -77,27 +100,43 @@ public class Player_Control : MonoBehaviour
 
 			// Calculate actual movement
 			if (moveDir.magnitude < 0.01 && moveDir.magnitude > -0.01)
+			{
 				moveSpeed = 0.0f;
+				anim.SetInteger("Speed", 0);//still
+			}
 			else if (Input.GetKey(KeyCode.LeftShift))
+			{
 				moveSpeed = walkSpeed;
-			else moveSpeed = runSpeed;
+				anim.SetInteger("Speed", 1);//walk
+			}
+			else
+			{
+				moveSpeed = runSpeed;
+				anim.SetInteger("Speed", 2);//run
+			}
 
 			transform.position += moveDir * moveSpeed * Time.deltaTime;
 			//rigidbody.velocity = new Vector3(moveDir.x * moveSpeed * Time.deltaTime, rigidbody.velocity.y, moveDir.z * moveSpeed * Time.deltaTime);
 			//rigidbody.AddForce(new Vector3(moveDir.x * moveSpeed * Time.deltaTime, 0, moveDir.z * moveSpeed * Time.deltaTime) * 50);
 
 			//jump
-			if (Input.GetKeyDown(KeyCode.Space))
+			if (IsGrounded())
 			{
-				rigidbody.AddForce(Vector3.up * jumpForce);
+				if (Input.GetKeyDown(KeyCode.Space))
+				{
+					rigidbody.AddForce(Vector3.up * jumpForce);
+					anim.SetBool("IsJumping", true);
+				}
+				else
+					anim.SetBool("IsJumping", false);
 			}
+			else
+				anim.SetBool("IsJumping", false);
 		}
 
 		// update the rotation
 		if (moveDir != Vector3.zero)
 			transform.rotation = Quaternion.LookRotation(moveDir);
-
-		anim.SetFloat("Speed", Mathf.Abs(moveSpeed));
 	}
 
 	void LateUpdate()
@@ -108,8 +147,9 @@ public class Player_Control : MonoBehaviour
 
 		//up and down
 		//constrain to -7.5 to 50
+		//TODO: fix jitters
 		Camera.main.transform.RotateAround(transform.position, Camera.main.transform.TransformDirection(Vector3.right), 
-			Mathf.Clamp(Input.GetAxis("Mouse Y") * -lookSensitivity * Time.deltaTime, Mathf.Clamp(-7.5f - Camera.main.transform.localEulerAngles.x, -100, 0), 50f - Camera.main.transform.localEulerAngles.x));
+			Mathf.Clamp(Input.GetAxis("Mouse Y") * -lookSensitivity * Time.deltaTime, 0f - Camera.main.transform.localEulerAngles.x, 50f - Camera.main.transform.localEulerAngles.x));
 
 		//detect direction rotating, if messes up from it, set it back to good transform
 		/*GameObject cam = new GameObject();
@@ -127,5 +167,20 @@ public class Player_Control : MonoBehaviour
 		cameraDir.Normalize();
 		//Camera.main.transform.rotation *= Quaternion.Euler(Vector3.up * Input.GetAxis("Mouse X"));
 		Camera.main.transform.position = gameObject.transform.position + cameraDir * camDistance;
+	}
+
+	private bool IsGrounded()
+	{
+		return Physics.Raycast(transform.position, Vector3.down, 0.3f);
+	}
+
+	public bool hasGun()
+	{
+		return gun;
+	}
+
+	public bool isShooting()
+	{
+		return shootSpeed < shootSpeedCap;
 	}
 }
