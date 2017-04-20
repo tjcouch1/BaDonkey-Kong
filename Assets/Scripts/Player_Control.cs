@@ -11,8 +11,10 @@ public class Player_Control : MonoBehaviour
 
 	public GameObject laserGun;
 	public bool gun = false;
-	public float shootSpeedCap = 1f;
+	public float shootSpeedCap = 1.2f;
 	private float shootSpeed;
+	private float shootDelayCap = .25f;
+	private float shootDelay;
 
 	private float moveSpeed;
 	private Vector3 moveDir;// the actual moving direction
@@ -43,6 +45,7 @@ public class Player_Control : MonoBehaviour
 		rigidbody = GetComponent<Rigidbody>();
 
 		shootSpeed = shootSpeedCap;
+		shootDelay = shootDelayCap;
 	}
 
 	void Update()
@@ -60,16 +63,18 @@ public class Player_Control : MonoBehaviour
 			laserGun.GetComponent<Gun_Control>().setVisible(true);
 		else laserGun.GetComponent<Gun_Control>().setVisible(false);
 
-		if (Input.GetMouseButtonDown(0) && hasGun() && !isShooting())
+		if ((Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)) && hasGun() && !isShooting())
 		{
 			shootSpeed -= .01f;
-			laserGun.GetComponent<Gun_Control>().Fire();
+			shootDelay -= .01f;
+			anim.SetBool("ShootBool", true);
+			if (Input.GetMouseButtonDown(0))
+				moveDir = forwardDir;
 		}
 
 		if (isShooting())
 		{
-			anim.SetBool("ShootBool", true);
-			moveDir = forwardDir;
+			//anim.SetBool("ShootBool", true);
 			moveSpeed = 0;
 			//rigidbody.velocity = new Vector3(0, rigidbody.velocity.y, 0);
 
@@ -78,6 +83,14 @@ public class Player_Control : MonoBehaviour
 			shootSpeed -= Time.deltaTime;
 			if (shootSpeed <= 0)
 				shootSpeed = shootSpeedCap;
+			if (shootDelay < shootDelayCap)
+				shootDelay -= Time.deltaTime;
+			if (shootDelay <= 0)
+			{
+				shootDelay = shootDelayCap;
+				laserGun.GetComponent<Gun_Control>().Fire(transform.TransformDirection(Vector3.forward));
+				anim.SetBool("ShootBool", false);
+			}
 		}
 		else//update the position if not shooting
 		{
@@ -171,12 +184,17 @@ public class Player_Control : MonoBehaviour
 
 	private bool IsGrounded()
 	{
-		return Physics.Raycast(transform.position, Vector3.down, 0.3f);
+		return Physics.Raycast(transform.position, Vector3.down, 0.4f);
 	}
 
 	public bool hasGun()
 	{
 		return gun;
+	}
+
+	public void setGun(bool has)
+	{
+		gun = has;
 	}
 
 	public bool isShooting()

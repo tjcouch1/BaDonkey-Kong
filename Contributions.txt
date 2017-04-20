@@ -8,12 +8,16 @@ TJ Couch
 		- BarrelBlack
 		- Clarence
 		- Key
+		- Laser
+		- Laser Gun
+		- LandPlatform
 	- Scenes
 		- Level Layout
     - Scripts
 		- Player_Control
 		- Camera_Control
 		- Gun_Control
+		- Pausable
 	- Visuals
 	- Sprites
 		- KeyIcon

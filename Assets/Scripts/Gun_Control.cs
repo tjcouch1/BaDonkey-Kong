@@ -29,10 +29,10 @@ public class Gun_Control : MonoBehaviour {
 	}
 
 
-	public void Fire() 
+	public void Fire(Vector3 dir)
 	{
-		Vector3 dir = (transform.rotation*Vector3.forward).normalized; 
-		GameObject instance = (GameObject) Instantiate(bullet, transform.position, transform.rotation);
+		//Vector3 dir = (transform.rotation*Vector3.forward).normalized; 
+		GameObject instance = (GameObject) Instantiate(bullet, transform.position, Quaternion.LookRotation(dir, Vector3.up));
 		instance.GetComponent<Rigidbody> ().AddForce (fireForce*dir);
 		Destroy(instance, 6.0f);
 
