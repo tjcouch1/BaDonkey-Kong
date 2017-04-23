@@ -75,6 +75,6 @@ External Tools and Assets ***NEED TO BE CONFIRMED BY DR. PENG
 	- Sprites
 	- Models, Textures, and Animations
 		- All models have credits attributed in their respective Credits.txt files.
-	- Audio
+	- Audio: https://opengameart.org/content/factory-ambiance, https://opengameart.org/content/metal-thing-falling
 	- Font: http://www.dafont.com/obelixpro.font
 
