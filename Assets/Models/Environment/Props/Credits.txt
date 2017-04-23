@@ -1,0 +1,13 @@
+Sign: Timothy Couch
+Metal Door:
+	Model: Timothy Couch
+	Texture: http://4.bp.blogspot.com/-D5BNJCdDj6U/U84WJArjb4I/AAAAAAAAFnY/q9s-JuQ55X0/s1600/Metal+aluminium+tin+shutter+door+texture.jpg
+Chest:
+	Model, Texture: https://free3d.com/3d-model/cartoon-chest-29193.html
+	Animation: Timothy Couch
+
+LavaGround:
+	Model: Timothy Couch
+	Texture: http://www.outworldz.com/SeamlessTextures/master/Lava/Mavrosh-Stock-texture_of_lava.jpg
+
+GunShop: Timothy Couch

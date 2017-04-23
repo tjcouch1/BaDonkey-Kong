@@ -154,7 +154,12 @@ ModelImporter:
     4300000: roboy
     4300002: roboyEyeL
     4300004: roboyEyeR
-    7400000: Take 001
+    7400000: Idle
+    7400002: Walk
+    7400004: Run
+    7400006: Jump
+    7400008: Shoot
+    7400010: None
     9500000: //RootNode
     13700000: roboy
     13700002: roboyEyeL
@@ -179,7 +184,1051 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 180
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: imagePlane1
+        weight: 1
+      - path: imagePlane2
+        weight: 1
+      - path: index_L_IK
+        weight: 1
+      - path: index_R_IK
+        weight: 1
+      - path: middle_L_IK
+        weight: 1
+      - path: middle_R_IK
+        weight: 1
+      - path: pelvis_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt/heel_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt/heel_L_jnt/toe_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt/heel_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt/heel_R_jnt/toe_R_jnt
+        weight: 1
+      - path: pelvis_jnt/leg_L_ctrl
+        weight: 1
+      - path: pelvis_jnt/leg_L_ctrl/leg_L_IK
+        weight: 1
+      - path: pelvis_jnt/leg_L_LOC
+        weight: 1
+      - path: pelvis_jnt/leg_R_ctrl
+        weight: 1
+      - path: pelvis_jnt/leg_R_ctrl/leg_R_IK
+        weight: 1
+      - path: pelvis_jnt/leg_R_LOC
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_L_ctrl
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_L_ctrl/arm_L_IK
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_R_ctrl
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_R_ctrl/arm_R_IK
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/neck_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/neck_jnt/head_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt/index3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt/index3_L_jnt/index4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt/middle3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt/middle3_L_jnt/middle4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt/pinky3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt/pinky3_L_jnt/pinky4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt/thumb2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt/thumb2_L_jnt/thumb3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt/index3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt/index3_R_jnt/index4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt/middle3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt/middle3_R_jnt/middle4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt/pinky3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt/pinky3_R_jnt/pinky4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt/thumb2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt/thumb2_R_jnt/thumb3_R_jnt
+        weight: 1
+      - path: pinky_L_IK
+        weight: 1
+      - path: pinky_R_IK
+        weight: 1
+      - path: roboy
+        weight: 1
+      - path: roboy/roboyEyeL
+        weight: 1
+      - path: roboy/roboyEyeR
+        weight: 1
+      - path: thumb_L_IK
+        weight: 1
+      - path: thumb_R_IK
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 241
+      lastFrame: 360
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: imagePlane1
+        weight: 1
+      - path: imagePlane2
+        weight: 1
+      - path: index_L_IK
+        weight: 1
+      - path: index_R_IK
+        weight: 1
+      - path: middle_L_IK
+        weight: 1
+      - path: middle_R_IK
+        weight: 1
+      - path: pelvis_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt/heel_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt/heel_L_jnt/toe_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt/heel_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt/heel_R_jnt/toe_R_jnt
+        weight: 1
+      - path: pelvis_jnt/leg_L_ctrl
+        weight: 1
+      - path: pelvis_jnt/leg_L_ctrl/leg_L_IK
+        weight: 1
+      - path: pelvis_jnt/leg_L_LOC
+        weight: 1
+      - path: pelvis_jnt/leg_R_ctrl
+        weight: 1
+      - path: pelvis_jnt/leg_R_ctrl/leg_R_IK
+        weight: 1
+      - path: pelvis_jnt/leg_R_LOC
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_L_ctrl
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_L_ctrl/arm_L_IK
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_R_ctrl
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_R_ctrl/arm_R_IK
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/neck_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/neck_jnt/head_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt/index3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt/index3_L_jnt/index4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt/middle3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt/middle3_L_jnt/middle4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt/pinky3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt/pinky3_L_jnt/pinky4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt/thumb2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt/thumb2_L_jnt/thumb3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt/index3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt/index3_R_jnt/index4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt/middle3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt/middle3_R_jnt/middle4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt/pinky3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt/pinky3_R_jnt/pinky4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt/thumb2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt/thumb2_R_jnt/thumb3_R_jnt
+        weight: 1
+      - path: pinky_L_IK
+        weight: 1
+      - path: pinky_R_IK
+        weight: 1
+      - path: roboy
+        weight: 1
+      - path: roboy/roboyEyeL
+        weight: 1
+      - path: roboy/roboyEyeR
+        weight: 1
+      - path: thumb_L_IK
+        weight: 1
+      - path: thumb_R_IK
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 421
+      lastFrame: 510
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: imagePlane1
+        weight: 1
+      - path: imagePlane2
+        weight: 1
+      - path: index_L_IK
+        weight: 1
+      - path: index_R_IK
+        weight: 1
+      - path: middle_L_IK
+        weight: 1
+      - path: middle_R_IK
+        weight: 1
+      - path: pelvis_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt/heel_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt/heel_L_jnt/toe_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt/heel_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt/heel_R_jnt/toe_R_jnt
+        weight: 1
+      - path: pelvis_jnt/leg_L_ctrl
+        weight: 1
+      - path: pelvis_jnt/leg_L_ctrl/leg_L_IK
+        weight: 1
+      - path: pelvis_jnt/leg_L_LOC
+        weight: 1
+      - path: pelvis_jnt/leg_R_ctrl
+        weight: 1
+      - path: pelvis_jnt/leg_R_ctrl/leg_R_IK
+        weight: 1
+      - path: pelvis_jnt/leg_R_LOC
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_L_ctrl
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_L_ctrl/arm_L_IK
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_R_ctrl
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_R_ctrl/arm_R_IK
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/neck_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/neck_jnt/head_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt/index3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt/index3_L_jnt/index4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt/middle3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt/middle3_L_jnt/middle4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt/pinky3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt/pinky3_L_jnt/pinky4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt/thumb2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt/thumb2_L_jnt/thumb3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt/index3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt/index3_R_jnt/index4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt/middle3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt/middle3_R_jnt/middle4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt/pinky3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt/pinky3_R_jnt/pinky4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt/thumb2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt/thumb2_R_jnt/thumb3_R_jnt
+        weight: 1
+      - path: pinky_L_IK
+        weight: 1
+      - path: pinky_R_IK
+        weight: 1
+      - path: roboy
+        weight: 1
+      - path: roboy/roboyEyeL
+        weight: 1
+      - path: roboy/roboyEyeR
+        weight: 1
+      - path: thumb_L_IK
+        weight: 1
+      - path: thumb_R_IK
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      firstFrame: 601
+      lastFrame: 660
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: imagePlane1
+        weight: 1
+      - path: imagePlane2
+        weight: 1
+      - path: index_L_IK
+        weight: 1
+      - path: index_R_IK
+        weight: 1
+      - path: middle_L_IK
+        weight: 1
+      - path: middle_R_IK
+        weight: 1
+      - path: pelvis_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt/heel_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt/heel_L_jnt/toe_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt/heel_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt/heel_R_jnt/toe_R_jnt
+        weight: 1
+      - path: pelvis_jnt/leg_L_ctrl
+        weight: 1
+      - path: pelvis_jnt/leg_L_ctrl/leg_L_IK
+        weight: 1
+      - path: pelvis_jnt/leg_L_LOC
+        weight: 1
+      - path: pelvis_jnt/leg_R_ctrl
+        weight: 1
+      - path: pelvis_jnt/leg_R_ctrl/leg_R_IK
+        weight: 1
+      - path: pelvis_jnt/leg_R_LOC
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_L_ctrl
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_L_ctrl/arm_L_IK
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_R_ctrl
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_R_ctrl/arm_R_IK
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/neck_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/neck_jnt/head_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt/index3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt/index3_L_jnt/index4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt/middle3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt/middle3_L_jnt/middle4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt/pinky3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt/pinky3_L_jnt/pinky4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt/thumb2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt/thumb2_L_jnt/thumb3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt/index3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt/index3_R_jnt/index4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt/middle3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt/middle3_R_jnt/middle4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt/pinky3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt/pinky3_R_jnt/pinky4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt/thumb2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt/thumb2_R_jnt/thumb3_R_jnt
+        weight: 1
+      - path: pinky_L_IK
+        weight: 1
+      - path: pinky_R_IK
+        weight: 1
+      - path: roboy
+        weight: 1
+      - path: roboy/roboyEyeL
+        weight: 1
+      - path: roboy/roboyEyeR
+        weight: 1
+      - path: thumb_L_IK
+        weight: 1
+      - path: thumb_R_IK
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Shoot
+      takeName: Take 001
+      firstFrame: 731
+      lastFrame: 790
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: imagePlane1
+        weight: 1
+      - path: imagePlane2
+        weight: 1
+      - path: index_L_IK
+        weight: 1
+      - path: index_R_IK
+        weight: 1
+      - path: middle_L_IK
+        weight: 1
+      - path: middle_R_IK
+        weight: 1
+      - path: pelvis_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt/heel_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt/heel_L_jnt/toe_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt/heel_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt/heel_R_jnt/toe_R_jnt
+        weight: 1
+      - path: pelvis_jnt/leg_L_ctrl
+        weight: 1
+      - path: pelvis_jnt/leg_L_ctrl/leg_L_IK
+        weight: 1
+      - path: pelvis_jnt/leg_L_LOC
+        weight: 1
+      - path: pelvis_jnt/leg_R_ctrl
+        weight: 1
+      - path: pelvis_jnt/leg_R_ctrl/leg_R_IK
+        weight: 1
+      - path: pelvis_jnt/leg_R_LOC
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_L_ctrl
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_L_ctrl/arm_L_IK
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_R_ctrl
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_R_ctrl/arm_R_IK
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/neck_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/neck_jnt/head_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt/index3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt/index3_L_jnt/index4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt/middle3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt/middle3_L_jnt/middle4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt/pinky3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt/pinky3_L_jnt/pinky4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt/thumb2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt/thumb2_L_jnt/thumb3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt/index3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt/index3_R_jnt/index4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt/middle3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt/middle3_R_jnt/middle4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt/pinky3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt/pinky3_R_jnt/pinky4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt/thumb2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt/thumb2_R_jnt/thumb3_R_jnt
+        weight: 1
+      - path: pinky_L_IK
+        weight: 1
+      - path: pinky_R_IK
+        weight: 1
+      - path: roboy
+        weight: 1
+      - path: roboy/roboyEyeL
+        weight: 1
+      - path: roboy/roboyEyeR
+        weight: 1
+      - path: thumb_L_IK
+        weight: 1
+      - path: thumb_R_IK
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: None
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: imagePlane1
+        weight: 1
+      - path: imagePlane2
+        weight: 1
+      - path: index_L_IK
+        weight: 1
+      - path: index_R_IK
+        weight: 1
+      - path: middle_L_IK
+        weight: 1
+      - path: middle_R_IK
+        weight: 1
+      - path: pelvis_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt/heel_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_L_jnt/knee_L_jnt/heel_L_jnt/toe_L_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt/heel_R_jnt
+        weight: 1
+      - path: pelvis_jnt/hip_R_jnt/knee_R_jnt/heel_R_jnt/toe_R_jnt
+        weight: 1
+      - path: pelvis_jnt/leg_L_ctrl
+        weight: 1
+      - path: pelvis_jnt/leg_L_ctrl/leg_L_IK
+        weight: 1
+      - path: pelvis_jnt/leg_L_LOC
+        weight: 1
+      - path: pelvis_jnt/leg_R_ctrl
+        weight: 1
+      - path: pelvis_jnt/leg_R_ctrl/leg_R_IK
+        weight: 1
+      - path: pelvis_jnt/leg_R_LOC
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_L_ctrl
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_L_ctrl/arm_L_IK
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_R_ctrl
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/arm_R_ctrl/arm_R_IK
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/neck_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/neck_jnt/head_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt/index3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/index1_L_jnt/index2_L_jnt/index3_L_jnt/index4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt/middle3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/middle1_L_jnt/middle2_L_jnt/middle3_L_jnt/middle4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt/pinky3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/pinky1_L_jnt/pinky2_L_jnt/pinky3_L_jnt/pinky4_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt/thumb2_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_L_jnt/elbow_L_jnt/wrist_L_jnt/thumb1_L_jnt/thumb2_L_jnt/thumb3_L_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt/index3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/index1_R_jnt/index2_R_jnt/index3_R_jnt/index4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt/middle3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/middle1_R_jnt/middle2_R_jnt/middle3_R_jnt/middle4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt/pinky3_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/pinky1_R_jnt/pinky2_R_jnt/pinky3_R_jnt/pinky4_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt/thumb2_R_jnt
+        weight: 1
+      - path: pelvis_jnt/spine1_jnt/spine2_jnt/shoulder_R_jnt/elbow_R_jnt/wrist_R_jnt/thumb1_R_jnt/thumb2_R_jnt/thumb3_R_jnt
+        weight: 1
+      - path: pinky_L_IK
+        weight: 1
+      - path: pinky_R_IK
+        weight: 1
+      - path: roboy
+        weight: 1
+      - path: roboy/roboyEyeL
+        weight: 1
+      - path: roboy/roboyEyeR
+        weight: 1
+      - path: thumb_L_IK
+        weight: 1
+      - path: thumb_R_IK
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
