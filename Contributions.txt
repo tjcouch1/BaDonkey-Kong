@@ -70,10 +70,12 @@ Molly Sulcer
 		-help
 		-mainMenu
 		-story
+		-pause menu in level1
 	- Scripts
 		-LoadonClick
 		-QuitOnClick
 		-ButtonNavgation
+		-PauseGame
 	- Models
 		- Penguin
 
