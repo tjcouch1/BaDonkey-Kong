@@ -1,0 +1,3 @@
+We created the main player, Clarence, and all his animations.
+We created the penguin and all his animations.
+We created the enemy BaDonkey Kongs and all their animations.

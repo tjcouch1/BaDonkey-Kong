@@ -23,6 +23,9 @@ public class Player_Control : MonoBehaviour
 	private float moveSpeed;
 	private Vector3 moveDir;// the actual moving direction
 
+	private float idleTimeCap = 7;
+	private float idleTime;
+
 	private Vector3 forwardDir;//Forward Direction of the character
 	private Vector3 rightDir;//Right Direction of the character
 
@@ -50,10 +53,20 @@ public class Player_Control : MonoBehaviour
 
 		shootSpeed = shootSpeedCap;
 		shootDelay = shootDelayCap;
+
+		idleTime = idleTimeCap;
 	}
 
 	void Update()
 	{
+		anim.SetBool("Idle", false);
+		idleTime -= Time.deltaTime;
+		if (idleTime <= 0)
+		{
+			idleTime = idleTimeCap;
+			anim.SetBool("Idle", true);
+		}
+
 		//Get forward direction of the character
 		forwardDir = Camera.main.transform.TransformDirection(Vector3.forward);
 		forwardDir.y = 0;
