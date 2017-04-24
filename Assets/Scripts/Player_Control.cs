@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Player_Control : MonoBehaviour
 {
+	public int hp = 100;
+
+	public bool hasKey = false;
+
 	public float walkSpeed = 5.0f;
 	public float runSpeed = 10.0f;
 	public float jumpForce = 200f;
@@ -28,7 +32,7 @@ public class Player_Control : MonoBehaviour
 
 	private Animator anim;
 
-	private Rigidbody rigidbody;
+	private Rigidbody rb;
 
 	void Start()
 	{
@@ -42,7 +46,7 @@ public class Player_Control : MonoBehaviour
 		cameraDir.Normalize();
 
 		anim = GetComponent<Animator>();
-		rigidbody = GetComponent<Rigidbody>();
+		rb = GetComponent<Rigidbody>();
 
 		shootSpeed = shootSpeedCap;
 		shootDelay = shootDelayCap;
@@ -137,7 +141,7 @@ public class Player_Control : MonoBehaviour
 			{
 				if (Input.GetKeyDown(KeyCode.Space))
 				{
-					rigidbody.AddForce(Vector3.up * jumpForce);
+					rb.AddForce(Vector3.up * jumpForce);
 					anim.SetBool("IsJumping", true);
 				}
 				else
@@ -182,6 +186,25 @@ public class Player_Control : MonoBehaviour
 		Camera.main.transform.position = gameObject.transform.position + cameraDir * camDistance;
 	}
 
+	public void Damage(int d)
+	{
+		hp -= d;
+
+		if (hp <= 0)
+			LoseGame();
+	}
+
+	public void LoseGame()
+	{
+		//TODO: Molly
+		//SceneManager.LoadScene("Ded");
+	}
+
+	public void setHasKey(bool k)
+	{
+		hasKey = k;
+	}
+
 	private bool IsGrounded()
 	{
 		return Physics.Raycast(transform.position, Vector3.down, 0.4f);
@@ -200,5 +223,13 @@ public class Player_Control : MonoBehaviour
 	public bool isShooting()
 	{
 		return shootSpeed < shootSpeedCap;
+	}
+
+	public void OnTriggerEnter(Collider col)
+	{
+		if (col.gameObject.CompareTag("Door") && hasKey)
+		{
+			col.gameObject.GetComponent<Door_Control>().Unlock();
+		}
 	}
 }

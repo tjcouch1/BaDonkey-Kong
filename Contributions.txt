@@ -11,13 +11,20 @@ TJ Couch
 		- Laser
 		- Laser Gun
 		- LandPlatform
+		- Bush
+		- Tree
+		- MetalDoor
+		- MovingMetalPlatform
+		- Chest
 	- Scenes
-		- Level Layout
+		- level1 Layout and placement
     - Scripts
 		- Player_Control
 		- Camera_Control
 		- Gun_Control
 		- Pausable
+		- Laser_Control
+		- Door_Control
 	- Visuals
 	- Sprites
 		- KeyIcon
@@ -34,6 +41,8 @@ TJ Couch
 		- MetalDoor
 		- Sign
 		- LavaGround
+		- Fireball
+		- Iceball
 	- Materials/Textures
 		- BaDonkey Kong
 		- Shop
@@ -92,7 +101,7 @@ Clark Chambers
 
 
 
-External Tools and Assets ***NEED TO BE CONFIRMED BY DR. PENG
+External Tools and Assets ***TOOLS NEED TO BE CONFIRMED BY DR. PENG
 =======================
 - Tools
 	- AutoDesk Maya 2015 Educational

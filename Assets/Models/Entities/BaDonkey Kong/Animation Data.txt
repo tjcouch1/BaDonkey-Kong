@@ -1,0 +1,16 @@
+BaDonkey Kong
+
+Idle
+0-179
+
+Run
+299-389
+
+Die (Don't use - use ragdoll)
+479-539
+
+Walk
+599-719
+
+Attack
+779-839

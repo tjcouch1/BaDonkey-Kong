@@ -1,0 +1,6 @@
+Fireball:
+	Texture: http://img01.deviantart.net/a9f5/i/2012/297/0/2/seamless_fire_texture_by_hhh316-d5isg37.jpg
+	Model: Timothy Couch
+Iceball:
+	Texture: https://www.colourbox.com/preview/8247387-seamless-ice-texture.jpg
+	Model: Timothy Couch

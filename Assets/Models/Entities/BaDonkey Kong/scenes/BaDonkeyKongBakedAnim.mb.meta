@@ -1,0 +1,681 @@
+fileFormatVersion: 2
+guid: d10f9f16408e5634dab2802cb5b11431
+timeCreated: 1492563137
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: back
+    100002: backPlane
+    100004: //RootNode
+    100006: bodyJoint
+    100008: buttEndJoint
+    100010: buttJoint
+    100012: chestJoint
+    100014: eye
+    100016: frontPlane
+    100018: gorilla
+    100020: headJoint
+    100022: ikHandle1
+    100024: ikHandle2
+    100026: ikHandle3
+    100028: ikHandle4
+    100030: leftArmCTRL
+    100032: leftElbowJoint
+    100034: leftHandJoint
+    100036: leftHeelJoint
+    100038: leftHipJoint
+    100040: leftKneeJoint
+    100042: leftLegCTRL
+    100044: leftShoulderJoint
+    100046: leftToeJoint
+    100048: leftWristJoint
+    100050: neckJoint
+    100052: rightArmCTRL
+    100054: rightElbowJoint
+    100056: rightHandJoint
+    100058: rightHeelJoint
+    100060: rightHipJoint
+    100062: rightKneeJoint
+    100064: rightLegCTRL
+    100066: rightShoulderJoint
+    100068: rightToeJoint
+    100070: rightWristJoint
+    100072: sidePlane
+    100074: topPlane
+    400000: back
+    400002: backPlane
+    400004: //RootNode
+    400006: bodyJoint
+    400008: buttEndJoint
+    400010: buttJoint
+    400012: chestJoint
+    400014: eye
+    400016: frontPlane
+    400018: gorilla
+    400020: headJoint
+    400022: ikHandle1
+    400024: ikHandle2
+    400026: ikHandle3
+    400028: ikHandle4
+    400030: leftArmCTRL
+    400032: leftElbowJoint
+    400034: leftHandJoint
+    400036: leftHeelJoint
+    400038: leftHipJoint
+    400040: leftKneeJoint
+    400042: leftLegCTRL
+    400044: leftShoulderJoint
+    400046: leftToeJoint
+    400048: leftWristJoint
+    400050: neckJoint
+    400052: rightArmCTRL
+    400054: rightElbowJoint
+    400056: rightHandJoint
+    400058: rightHeelJoint
+    400060: rightHipJoint
+    400062: rightKneeJoint
+    400064: rightLegCTRL
+    400066: rightShoulderJoint
+    400068: rightToeJoint
+    400070: rightWristJoint
+    400072: sidePlane
+    400074: topPlane
+    4300000: gorilla
+    4300002: eye
+    7400000: Idle
+    7400002: Run
+    7400004: Walk
+    7400006: Attack
+    7400008: None
+    9500000: //RootNode
+    13700000: eye
+    13700002: gorilla
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 179
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: back
+        weight: 1
+      - path: backPlane
+        weight: 1
+      - path: bodyJoint
+        weight: 1
+      - path: bodyJoint/buttJoint
+        weight: 1
+      - path: bodyJoint/buttJoint/buttEndJoint
+        weight: 1
+      - path: bodyJoint/chestJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint/leftElbowJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint/leftElbowJoint/leftWristJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint/leftElbowJoint/leftWristJoint/leftHandJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/neckJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/neckJoint/headJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint/rightElbowJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint/rightElbowJoint/rightWristJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint/rightElbowJoint/rightWristJoint/rightHandJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint/leftKneeJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint/leftKneeJoint/leftHeelJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint/leftKneeJoint/leftHeelJoint/leftToeJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint/rightKneeJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint/rightKneeJoint/rightHeelJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint/rightKneeJoint/rightHeelJoint/rightToeJoint
+        weight: 1
+      - path: frontPlane
+        weight: 1
+      - path: gorilla
+        weight: 1
+      - path: gorilla/eye
+        weight: 1
+      - path: leftArmCTRL
+        weight: 1
+      - path: leftArmCTRL/ikHandle1
+        weight: 1
+      - path: leftLegCTRL
+        weight: 1
+      - path: leftLegCTRL/ikHandle3
+        weight: 1
+      - path: rightArmCTRL
+        weight: 1
+      - path: rightArmCTRL/ikHandle2
+        weight: 1
+      - path: rightLegCTRL
+        weight: 1
+      - path: rightLegCTRL/ikHandle4
+        weight: 1
+      - path: sidePlane
+        weight: 1
+      - path: topPlane
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 299
+      lastFrame: 389
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: back
+        weight: 1
+      - path: backPlane
+        weight: 1
+      - path: bodyJoint
+        weight: 1
+      - path: bodyJoint/buttJoint
+        weight: 1
+      - path: bodyJoint/buttJoint/buttEndJoint
+        weight: 1
+      - path: bodyJoint/chestJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint/leftElbowJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint/leftElbowJoint/leftWristJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint/leftElbowJoint/leftWristJoint/leftHandJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/neckJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/neckJoint/headJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint/rightElbowJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint/rightElbowJoint/rightWristJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint/rightElbowJoint/rightWristJoint/rightHandJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint/leftKneeJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint/leftKneeJoint/leftHeelJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint/leftKneeJoint/leftHeelJoint/leftToeJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint/rightKneeJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint/rightKneeJoint/rightHeelJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint/rightKneeJoint/rightHeelJoint/rightToeJoint
+        weight: 1
+      - path: frontPlane
+        weight: 1
+      - path: gorilla
+        weight: 1
+      - path: gorilla/eye
+        weight: 1
+      - path: leftArmCTRL
+        weight: 1
+      - path: leftArmCTRL/ikHandle1
+        weight: 1
+      - path: leftLegCTRL
+        weight: 1
+      - path: leftLegCTRL/ikHandle3
+        weight: 1
+      - path: rightArmCTRL
+        weight: 1
+      - path: rightArmCTRL/ikHandle2
+        weight: 1
+      - path: rightLegCTRL
+        weight: 1
+      - path: rightLegCTRL/ikHandle4
+        weight: 1
+      - path: sidePlane
+        weight: 1
+      - path: topPlane
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 599
+      lastFrame: 719
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: back
+        weight: 1
+      - path: backPlane
+        weight: 1
+      - path: bodyJoint
+        weight: 1
+      - path: bodyJoint/buttJoint
+        weight: 1
+      - path: bodyJoint/buttJoint/buttEndJoint
+        weight: 1
+      - path: bodyJoint/chestJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint/leftElbowJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint/leftElbowJoint/leftWristJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint/leftElbowJoint/leftWristJoint/leftHandJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/neckJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/neckJoint/headJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint/rightElbowJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint/rightElbowJoint/rightWristJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint/rightElbowJoint/rightWristJoint/rightHandJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint/leftKneeJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint/leftKneeJoint/leftHeelJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint/leftKneeJoint/leftHeelJoint/leftToeJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint/rightKneeJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint/rightKneeJoint/rightHeelJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint/rightKneeJoint/rightHeelJoint/rightToeJoint
+        weight: 1
+      - path: frontPlane
+        weight: 1
+      - path: gorilla
+        weight: 1
+      - path: gorilla/eye
+        weight: 1
+      - path: leftArmCTRL
+        weight: 1
+      - path: leftArmCTRL/ikHandle1
+        weight: 1
+      - path: leftLegCTRL
+        weight: 1
+      - path: leftLegCTRL/ikHandle3
+        weight: 1
+      - path: rightArmCTRL
+        weight: 1
+      - path: rightArmCTRL/ikHandle2
+        weight: 1
+      - path: rightLegCTRL
+        weight: 1
+      - path: rightLegCTRL/ikHandle4
+        weight: 1
+      - path: sidePlane
+        weight: 1
+      - path: topPlane
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack
+      takeName: Take 001
+      firstFrame: 779
+      lastFrame: 839
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: back
+        weight: 1
+      - path: backPlane
+        weight: 1
+      - path: bodyJoint
+        weight: 1
+      - path: bodyJoint/buttJoint
+        weight: 1
+      - path: bodyJoint/buttJoint/buttEndJoint
+        weight: 1
+      - path: bodyJoint/chestJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint/leftElbowJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint/leftElbowJoint/leftWristJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint/leftElbowJoint/leftWristJoint/leftHandJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/neckJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/neckJoint/headJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint/rightElbowJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint/rightElbowJoint/rightWristJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint/rightElbowJoint/rightWristJoint/rightHandJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint/leftKneeJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint/leftKneeJoint/leftHeelJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint/leftKneeJoint/leftHeelJoint/leftToeJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint/rightKneeJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint/rightKneeJoint/rightHeelJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint/rightKneeJoint/rightHeelJoint/rightToeJoint
+        weight: 1
+      - path: frontPlane
+        weight: 1
+      - path: gorilla
+        weight: 1
+      - path: gorilla/eye
+        weight: 1
+      - path: leftArmCTRL
+        weight: 1
+      - path: leftArmCTRL/ikHandle1
+        weight: 1
+      - path: leftLegCTRL
+        weight: 1
+      - path: leftLegCTRL/ikHandle3
+        weight: 1
+      - path: rightArmCTRL
+        weight: 1
+      - path: rightArmCTRL/ikHandle2
+        weight: 1
+      - path: rightLegCTRL
+        weight: 1
+      - path: rightLegCTRL/ikHandle4
+        weight: 1
+      - path: sidePlane
+        weight: 1
+      - path: topPlane
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: None
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: back
+        weight: 1
+      - path: backPlane
+        weight: 1
+      - path: bodyJoint
+        weight: 1
+      - path: bodyJoint/buttJoint
+        weight: 1
+      - path: bodyJoint/buttJoint/buttEndJoint
+        weight: 1
+      - path: bodyJoint/chestJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint/leftElbowJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint/leftElbowJoint/leftWristJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/leftShoulderJoint/leftElbowJoint/leftWristJoint/leftHandJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/neckJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/neckJoint/headJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint/rightElbowJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint/rightElbowJoint/rightWristJoint
+        weight: 1
+      - path: bodyJoint/chestJoint/rightShoulderJoint/rightElbowJoint/rightWristJoint/rightHandJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint/leftKneeJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint/leftKneeJoint/leftHeelJoint
+        weight: 1
+      - path: bodyJoint/leftHipJoint/leftKneeJoint/leftHeelJoint/leftToeJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint/rightKneeJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint/rightKneeJoint/rightHeelJoint
+        weight: 1
+      - path: bodyJoint/rightHipJoint/rightKneeJoint/rightHeelJoint/rightToeJoint
+        weight: 1
+      - path: frontPlane
+        weight: 1
+      - path: gorilla
+        weight: 1
+      - path: gorilla/eye
+        weight: 1
+      - path: leftArmCTRL
+        weight: 1
+      - path: leftArmCTRL/ikHandle1
+        weight: 1
+      - path: leftLegCTRL
+        weight: 1
+      - path: leftLegCTRL/ikHandle3
+        weight: 1
+      - path: rightArmCTRL
+        weight: 1
+      - path: rightArmCTRL/ikHandle2
+        weight: 1
+      - path: rightLegCTRL
+        weight: 1
+      - path: rightLegCTRL/ikHandle4
+        weight: 1
+      - path: sidePlane
+        weight: 1
+      - path: topPlane
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

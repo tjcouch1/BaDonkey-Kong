@@ -9,7 +9,6 @@ public class Gun_Control : MonoBehaviour {
 
 	public GameObject shootPos;
 
-	private bool visible = false;
 	private Vector3 origScale;
 
 	// Use this for initialization
