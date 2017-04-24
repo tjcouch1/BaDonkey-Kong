@@ -5,6 +5,8 @@ using UnityEngine;
 public class Door_Control : MonoBehaviour {
 
 	public bool unlocked = false;
+	public GameObject music;
+	public AudioClip outdoorMusic;
 	Vector3 targetPos;
 
 	// Use this for initialization
@@ -22,5 +24,8 @@ public class Door_Control : MonoBehaviour {
 	public void Unlock()
 	{
 		unlocked = true;
+		AudioSource aS = music.GetComponent<AudioSource>();
+		aS.clip = outdoorMusic;
+		aS.Play();
 	}
 }

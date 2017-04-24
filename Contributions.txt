@@ -80,6 +80,7 @@ Molly Sulcer
 		-mainMenu
 		-story
 		-pause menu in level1
+		-Music for level1
 	- Scripts
 		-LoadonClick
 		-QuitOnClick
@@ -111,6 +112,7 @@ External Tools and Assets ***TOOLS NEED TO BE CONFIRMED BY DR. PENG
 	- Sprites
 	- Models, Textures, and Animations
 		- All models have credits attributed in their respective Credits.txt files.
-	- Audio: https://opengameart.org/content/factory-ambiance, https://opengameart.org/content/metal-thing-falling
+	- Audio: https://opengameart.org/content/factory-ambiance, https://opengameart.org/content/metal-thing-falling, 
+	https://opengameart.org/content/happy-go-lucky-puzzle
 	- Font: http://www.dafont.com/obelixpro.font
 

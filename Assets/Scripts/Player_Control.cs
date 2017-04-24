@@ -231,5 +231,10 @@ public class Player_Control : MonoBehaviour
 		{
 			col.gameObject.GetComponent<Door_Control>().Unlock();
 		}
+		else if (col.gameObject.CompareTag("Key"))
+		{
+			setHasKey(true);
+			Destroy(col.gameObject);
+		}
 	}
 }
