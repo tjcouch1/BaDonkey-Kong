@@ -15,9 +15,9 @@ public class PenguinController : MonoBehaviour {
 	Animator anim;
 
 	float moveTime = 0.0f;
-	float idle_time = 0.0f;
-	float time_til_next_idle = 0.0f;
-	bool talkingFlag = false;
+	// float idle_time = 0.0f;
+	// float time_til_next_idle = 0.0f;
+	// bool talkingFlag = false;
 
 	Vector3 moveDir;
 	Vector3 storeDir;
@@ -30,13 +30,13 @@ public class PenguinController : MonoBehaviour {
 		moveDir = Vector3.zero;
 		storeDir = moveDir;
 		transform.position = waypoint.StartPosition();
-		time_til_next_idle = Random.Range(10.0f, 15.0f);
+		// time_til_next_idle = Random.Range(10.0f, 15.0f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if(Vector3.Distance(player.position, transform.position) <= distanceToPlayer) {
-			moveTime = 0.0f;
+			moveTime = 0.0f;	
 			transform.LookAt(player, Vector3.up);
 		}	
 		else {
@@ -50,7 +50,6 @@ public class PenguinController : MonoBehaviour {
 		if(moveDir != storeDir) {
 			chillFlag = true;
 			anim.SetBool("Walking", false);
-			Debug.Log("Set false");
 		}
 
 		storeDir = moveDir;
@@ -81,63 +80,4 @@ public class PenguinController : MonoBehaviour {
 	{
 		Gizmos.DrawWireSphere(transform.position, awayDistance);
 	}
-	
-	// // Update is called once per frame
-	// void Update () {
-	// 	if(Vector3.Distance(player.position, transform.position) <= distanceToPlayer) {
-	// 		spinFlag = false;
-	// 		moveTime = 0.0f;
-	// 		moveDir = waypoint.GetDirectionToPlayer(transform, player);
-	// 	}
-	// 	else {
-	// 		moveDir = waypoint.GetDirection(transform);
-	// 	}
-		
-	// 	if(waypoint.AwayFromWaypoint(transform, awayDistance)) {
-	// 		moveDir = waypoint.GetDirection(transform);
-	// 	}
-		
-	// 	// update motion mode: spin/move
-	// 	if(!spinFlag) {
-	// 		moveTime += Time.deltaTime;
-	// 		if(moveTime > 5.0f) {
-	// 			spinFlag = true;
-	// 			moveTime = 0.0f;
-	// 		}
-	// 	}
-		
-	// 	else {
-	// 		spinTime += Time.deltaTime;
-	// 		if(spinTime > 2.0f) {
-	// 			spinFlag = false;
-	// 			spinTime = 0.0f;
-	// 		}
-	// 	}
-		
-	// 	if(!spinFlag) {
-	// 		if(moveDir != Vector3.zero) {
-	// 			transform.position += moveDir*moveSpeed*Time.deltaTime;
-	// 			transform.rotation = Quaternion.LookRotation(moveDir);
-	// 		}
-	// 	}
-	// 	else {
-	// 		transform.rotation *= Quaternion.Euler(0, 10, 0);
-	// 	}
-	// }
-
-	
-	// void OnCollisionEnter(Collision col)
-	// {
-	// 	if(col.gameObject.name == "Bullet") {
-	// 		ParticleSystem instance = (ParticleSystem) Instantiate(ps, transform.position, transform.rotation);
-	// 		Destroy(instance.gameObject, ps.startLifetime);
-	// 		Destroy(instance.GetComponent<ParticleSystem>(), ps.startLifetime);
-	// 		Destroy(gameObject);
-	// 	}
-	// }
-	
-	// void OnDrawGizmos()
-	// {
-	// 	Gizmos.DrawWireSphere(transform.position, awayDistance);
-	// }
 }
