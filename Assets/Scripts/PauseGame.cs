@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PauseGame : MonoBehaviour {
 	public Transform canvas;
+	public Transform pauseScreen;
+	public GameObject penguinScreen;
 	// Use this for initialization
 
 	
@@ -13,6 +15,7 @@ public class PauseGame : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Escape))
 		{
 			Pause ();
+			enablePauseScreen();
 		}
 	}
 
@@ -29,6 +32,16 @@ public class PauseGame : MonoBehaviour {
 			canvas.gameObject.SetActive (false);
 			Time.timeScale = 1;
 	
+		}
 	}
-}
+
+	public void enablePenguinScreen() {
+		pauseScreen.gameObject.SetActive(false);
+		penguinScreen.SetActive(true);
+	}
+
+	public void enablePauseScreen() {
+		pauseScreen.gameObject.SetActive(true);
+		penguinScreen.SetActive(false);
+	}
 }
