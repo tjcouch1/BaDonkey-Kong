@@ -11,7 +11,7 @@ public class Player_Control : MonoBehaviour
 	public float walkSpeed = 5.0f;
 	public float runSpeed = 10.0f;
 	public float jumpForce = 200f;
-	public float lookSensitivity = 10f;
+	public float lookSensitivity = 20f;
 
 	public GameObject laserGun;
 	public bool gun = false;

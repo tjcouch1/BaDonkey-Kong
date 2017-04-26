@@ -6,16 +6,6 @@ public class HealthComponent : MonoBehaviour {
 
 	public int hp = 50;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
 	public void Damage(int damage)
 	{
 		hp -= damage;

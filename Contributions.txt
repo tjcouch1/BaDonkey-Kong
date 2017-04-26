@@ -93,12 +93,24 @@ Molly Sulcer
 Clark Chambers
 ======================
 - Assets
-	- Prefabs
+	- Prefabs		
+		-BadonkeyKong
+		- WaypointHandle
 	- Scenes
+		- level1
+		- Penguin Talk Screen
 	- Scripts
-	- Sprites
+		- BadonkeyKongController
+		- Penguin Controller
+		- UI PenguinController
+		- PauseGame
 	- Models
 		- Clarence
+	- ParticleEffects
+	- Animations
+		- Penguin_anim (controller)
+		- BadonkeyKong_anim (controller)
+
 
 
 
@@ -115,4 +127,5 @@ External Tools and Assets ***TOOLS NEED TO BE CONFIRMED BY DR. PENG
 	- Audio: https://opengameart.org/content/factory-ambiance, https://opengameart.org/content/metal-thing-falling, 
 	https://opengameart.org/content/happy-go-lucky-puzzle
 	- Font: http://www.dafont.com/obelixpro.font
+	- Penguinboi.png http://orig00.deviantart.net/de99/f/2014/308/9/c/evil_penguin_by_bloodyblackdragon911-d859cav.png
 
