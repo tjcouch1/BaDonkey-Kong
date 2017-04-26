@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Door_Control : MonoBehaviour {
-
 	public bool unlocked = false;
 	public GameObject music;
 	public AudioClip outdoorMusic;

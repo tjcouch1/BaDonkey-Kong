@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player_Control : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Player_Control : MonoBehaviour
 	public float runSpeed = 10.0f;
 	public float jumpForce = 200f;
 	public float lookSensitivity = 20f;
+
 
 	public GameObject laserGun;
 	public bool gun = false;
@@ -210,12 +212,13 @@ public class Player_Control : MonoBehaviour
 	public void LoseGame()
 	{
 		//TODO: Molly
-		//SceneManager.LoadScene("Ded");
+		SceneManager.LoadScene("GameOver");
 	}
 
 	public void setHasKey(bool k)
 	{
 		hasKey = k;
+	
 	}
 
 	private bool IsGrounded()
