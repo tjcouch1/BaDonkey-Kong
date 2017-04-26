@@ -96,6 +96,9 @@ Clark Chambers
 	- Prefabs		
 		-BadonkeyKong
 		- WaypointHandle
+		- BadonkeyKong_ragdoll
+		- Key (particles and spawning)
+		- Laser (particles)
 	- Scenes
 		- level1
 		- Penguin Talk Screen
@@ -104,6 +107,8 @@ Clark Chambers
 		- Penguin Controller
 		- UI PenguinController
 		- PauseGame
+		- KillMeTime
+		- BonkeyHolder
 	- Models
 		- Clarence
 	- ParticleEffects

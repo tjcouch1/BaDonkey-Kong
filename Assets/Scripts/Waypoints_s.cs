@@ -34,12 +34,12 @@ public class Waypoints_s : MonoBehaviour {
 		//Checking the orderDirection if it?s false means the AI isn?t moving by order, 
 		//so using the random index of waypoint
 		if(orderDirection == false) {
-			int int_randomWay = Random.Range(0, int_wayLength);
+			int int_randomWay = (int) (Mathf.Floor(Random.value * int_wayLength));
 			//Checking to make sure that the waypoint length is more than 1
 			if (int_wayLength > 1) {
 				//Use Random Index
 				while (int_wayIndex == int_randomWay) {
-					int_randomWay = Random.Range(0, int_wayLength);
+					int_randomWay = (int) (Mathf.Floor(Random.value * int_wayLength));
 				}
 			}
 			int_nextIndex = int_randomWay;
@@ -67,12 +67,12 @@ public class Waypoints_s : MonoBehaviour {
 					//Get the next way index
 					int_nextIndex = (int_nextIndex + 1) % int_wayLength;
 				} else {
-					int int_randomWay = Random.Range(0, int_wayLength);
+					int int_randomWay = (int) (Mathf.Floor(Random.value * int_wayLength));
 					//Checking to make sure that the waypoint length is more than 1
 					if (int_wayLength > 1) {
 						//Use Random Index
 						while (int_wayIndex == int_randomWay) {
-							int_randomWay = Random.Range(0, int_wayLength);
+							int_randomWay = (int) (Mathf.Floor(Random.value * int_wayLength));
 						}
 					}
 					int_nextIndex = int_randomWay;

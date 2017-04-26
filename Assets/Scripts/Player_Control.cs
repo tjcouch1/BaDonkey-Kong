@@ -203,8 +203,10 @@ public class Player_Control : MonoBehaviour
 	{
 		hp -= d;
 
-		if (hp <= 0)
+		if (hp <= 0){
+			Debug.Log("GAME HAS BEEN LOST!");
 			LoseGame();
+		}
 	}
 
 	public void LoseGame()

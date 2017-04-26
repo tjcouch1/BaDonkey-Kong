@@ -16,7 +16,7 @@ public class Laser_Control : MonoBehaviour {
 		
 	}
 
-	public void OnTriggerEnter(Collider other)
+	public void OnCollisionEnter(Collision other)
 	{
 		GameObject obj = other.gameObject;
 		if (!obj.CompareTag("Player"))
