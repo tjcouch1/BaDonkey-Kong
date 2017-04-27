@@ -83,7 +83,7 @@ public class DragonController : MonoBehaviour {
 		}
 	}
 
-	void OnDestroy() {
+	public void spawn_chest() {
 		Debug.Log("SPAWNING KEY");
 		Transform t = Instantiate(chest).transform;
 		t.position = transform.position;

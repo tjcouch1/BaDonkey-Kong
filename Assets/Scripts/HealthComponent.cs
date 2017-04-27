@@ -6,6 +6,7 @@ public class HealthComponent : MonoBehaviour {
 
 	public int hp = 50;
 	public GameObject ragdoll = null;
+	public DragonController dcont = null;
 
 	public void Damage(int damage)
 	{
@@ -15,6 +16,9 @@ public class HealthComponent : MonoBehaviour {
 			if(ragdoll != null) {
 				Transform t = Instantiate(ragdoll, transform.position, transform.rotation).transform;
 				t.parent = transform.parent;
+			}
+			if(dcont != null) {
+				dcont.spawn_chest();
 			}
 			Destroy(gameObject);
 		}
