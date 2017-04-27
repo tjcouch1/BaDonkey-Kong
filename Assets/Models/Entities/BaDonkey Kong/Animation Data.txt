@@ -14,3 +14,9 @@ Walk
 
 Attack
 779-839
+
+T-Pose
+850-851
+
+Alternate Straight-Up-And-Down T-Pose
+853-854
