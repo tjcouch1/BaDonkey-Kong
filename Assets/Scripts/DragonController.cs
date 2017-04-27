@@ -8,7 +8,7 @@ public class DragonController : MonoBehaviour {
 	public Transform player;
 	public GameObject fireball;
 	public GameObject iceball;
-	public float attack_cooldown = 3.0f;
+	public float attack_cooldown = 2.0f;
 	float attackTime = 0.0f;
 	public float engagement_radius = 20.0f;
 	public float rotation_speed = 100.0f;
@@ -84,7 +84,7 @@ public class DragonController : MonoBehaviour {
 	}
 
 	void OnDestroy() {
-		chest.active();
+		chest.activate();
 	}
 }
 

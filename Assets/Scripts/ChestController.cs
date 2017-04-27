@@ -12,17 +12,18 @@ public class ChestController : MonoBehaviour {
 	void Start() {
 		ps = GetComponent<ParticleSystem>();
 		light = GetComponent<Light>();
+		deactivate();
 	}	
 
 	public void activate()
 	{
 		light.enabled = true;
-		pc.enabled = true;
+		ps.Play();
 	}
 
 	void deactivate() {
 		light.enabled = false;
-		pc.enabled = false;
+		ps.Stop();
 	}
 
 
