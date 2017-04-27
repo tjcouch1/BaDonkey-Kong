@@ -98,11 +98,14 @@ Clark Chambers
 ======================
 - Assets
 	- Prefabs		
+		- Dragon
 		-BadonkeyKong
 		- WaypointHandle
 		- BadonkeyKong_ragdoll
 		- Key (particles and spawning)
 		- Laser (particles)
+		- Fireball
+		- Iceball
 	- Scenes
 		- level1
 		- Penguin Talk Screen
@@ -114,12 +117,13 @@ Clark Chambers
 		- PauseGame
 		- KillMeTime
 		- BonkeyHolder
+		- DragonController
 	- Models
 		- Clarence
-	- ParticleEffects
 	- Animations
 		- Penguin_anim (controller)
 		- BadonkeyKong_anim (controller)
+		- Dragon_anim (Controller)
 
 
 

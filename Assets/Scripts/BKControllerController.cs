@@ -18,9 +18,10 @@ public class BKControllerController : MonoBehaviour {
 	}
 		
 	public void activate_chase() {
-		con_chill.enabled = false;
-		con_chase.enabled = true;
-		con_chase.Activate();
+		// con_chill.enabled = false;
+		// con_chase.enabled = true;
+		// con_chase.Activate();
+		con_chill.moveSpeed += 1.0f;
 	}
 
 	void activate_chill() {
