@@ -6,6 +6,7 @@ public class PauseGame : MonoBehaviour {
 	public Transform canvas;
 	public Transform pauseScreen;
 	public GameObject penguinScreen;
+	public GameObject HelpScreen;
 	// Use this for initialization
 
 	
@@ -16,6 +17,11 @@ public class PauseGame : MonoBehaviour {
 		{
 			Pause ();
 			enablePauseScreen();
+		}
+		if (Input.GetKeyDown (KeyCode.End))
+		{
+			Help ();
+			enableHelpScreen();
 		}
 	}
 
@@ -35,6 +41,22 @@ public class PauseGame : MonoBehaviour {
 		}
 	}
 
+	public void Help()
+	{
+
+		if (canvas.gameObject.activeInHierarchy == false)
+		{
+			canvas.gameObject.SetActive (true);
+			Time.timeScale = 0;
+		} 
+		else 
+		{
+			canvas.gameObject.SetActive (false);
+			Time.timeScale = 1;
+
+		}
+	}
+
 	public void enablePenguinScreen() {
 		pauseScreen.gameObject.SetActive(false);
 		penguinScreen.SetActive(true);
@@ -42,6 +64,12 @@ public class PauseGame : MonoBehaviour {
 
 	public void enablePauseScreen() {
 		pauseScreen.gameObject.SetActive(true);
+		penguinScreen.SetActive(false);
+	}
+
+	public void enableHelpScreen() {
+		HelpScreen.gameObject.SetActive(true);
+		pauseScreen.gameObject.SetActive(false);
 		penguinScreen.SetActive(false);
 	}
 }

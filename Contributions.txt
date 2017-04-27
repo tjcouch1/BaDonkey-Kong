@@ -82,6 +82,7 @@ Molly Sulcer
 		-pause menu in level1
 		-Music for level1
 		-GameOver
+		-in game help (press end)
 	- Scripts
 		-LoadonClick
 		-QuitOnClick
