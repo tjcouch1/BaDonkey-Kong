@@ -8,7 +8,11 @@ public class PauseGame : MonoBehaviour {
 	public GameObject penguinScreen;
 	public GameObject HelpScreen;
 	// Use this for initialization
-
+	void Start()
+	{
+		Pause();
+		enableHelpScreen();
+	}
 
 	// Update is called once per frame
 	void Update ()
