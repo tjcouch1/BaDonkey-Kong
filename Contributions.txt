@@ -126,6 +126,7 @@ Clark Chambers
 		- DragonController
 		- FireballController
 		- IceballController
+		- ShowCursor
 	- Models
 		- Clarence
 	- Animations

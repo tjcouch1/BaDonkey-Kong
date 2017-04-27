@@ -9,7 +9,7 @@ public class PauseGame : MonoBehaviour {
 	public GameObject HelpScreen;
 	// Use this for initialization
 
-	
+
 	// Update is called once per frame
 	void Update ()
 	{
