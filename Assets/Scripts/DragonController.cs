@@ -84,7 +84,7 @@ public class DragonController : MonoBehaviour {
 	}
 
 	void OnDestroy() {
-		
+		chest.active();
 	}
 }
 
