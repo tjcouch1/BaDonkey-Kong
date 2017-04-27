@@ -35,15 +35,17 @@ public class PenguinController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Vector3.Distance(player.position, transform.position) <= distanceToPlayer) {
-			moveTime = 0.0f;	
-			transform.LookAt(player, Vector3.up);
-		}	
-		else {
+
+		if(waypoint.AwayFromWaypoint(transform, awayDistance)) {
 			moveDir = waypoint.GetDirection(transform);
 		}
 
-		if(waypoint.AwayFromWaypoint(transform, awayDistance)) {
+		if(Vector3.Distance(player.position, transform.position) <= distanceToPlayer) {
+			moveTime = 0.0f;	
+			moveDir = Vector3.zero;
+			transform.LookAt(player, Vector3.up);
+		}	
+		else {
 			moveDir = waypoint.GetDirection(transform);
 		}
 
