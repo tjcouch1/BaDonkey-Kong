@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Player_Control : MonoBehaviour
 {
 	public int hp = 100;
+	int start_hp;
 
 	public bool hasKey = false;
 
@@ -39,8 +40,13 @@ public class Player_Control : MonoBehaviour
 
 	private Rigidbody rb;
 
+	public ParticleSystem ps;
+
+
 	void Start()
 	{
+		ps.Stop();
+		start_hp = hp;
 		moveSpeed = 0;
 		moveDir = Vector3.zero;
 		forwardDir = Vector3.zero;
@@ -57,6 +63,8 @@ public class Player_Control : MonoBehaviour
 		shootDelay = shootDelayCap;
 
 		idleTime = idleTimeCap;
+
+		setGun(false);
 	}
 
 	void Update()
@@ -205,6 +213,10 @@ public class Player_Control : MonoBehaviour
 	{
 		hp -= d;
 
+		if(hp <= start_hp/2) {
+			ps.Play();
+		}
+
 		if (hp <= 0){
 			Debug.Log("GAME HAS BEEN LOST!");
 			LoseGame();
@@ -236,6 +248,12 @@ public class Player_Control : MonoBehaviour
 	public void setGun(bool has)
 	{
 		gun = has;
+		if(has == false) {
+			laserGun.SetActive(false);
+		}
+		else {
+			laserGun.SetActive(true);
+		}
 	}
 
 	public bool isShooting()

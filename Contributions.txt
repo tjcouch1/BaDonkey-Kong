@@ -107,6 +107,7 @@ Clark Chambers
 		- level1
 		- Penguin Talk Screen
 	- Scripts
+		- AddGravity
 		- BadonkeyKongController
 		- Penguin Controller
 		- UI PenguinController
@@ -137,4 +138,5 @@ External Tools and Assets ***TOOLS NEED TO BE CONFIRMED BY DR. PENG
 	https://opengameart.org/content/happy-go-lucky-puzzle
 	- Font: http://www.dafont.com/obelixpro.font
 	- Penguinboi.png http://orig00.deviantart.net/de99/f/2014/308/9/c/evil_penguin_by_bloodyblackdragon911-d859cav.png
+	- Smoke texture: http://www.hourences.com/tutorialimages/ue3cascade/smoketex.jpg
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BKController_Chase : MonoBehaviour {
+public class SteamParticleController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
