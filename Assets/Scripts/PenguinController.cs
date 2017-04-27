@@ -11,6 +11,8 @@ public class PenguinController : MonoBehaviour {
 	public float distanceToPlayer = 5.0f;
 	public float awayDistance = 10.0f;
 	public float chillTime = 2.0f;
+	float randomIdleTime;
+	float idle_time = 0.0f;
 
 	Animator anim;
 
@@ -30,11 +32,19 @@ public class PenguinController : MonoBehaviour {
 		moveDir = Vector3.zero;
 		storeDir = moveDir;
 		transform.position = waypoint.StartPosition();
+		randomIdleTime = Random.Range(15.0f, 25.0f);
 		// time_til_next_idle = Random.Range(10.0f, 15.0f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		idle_time += Time.deltaTime;
+		if(idle_time > randomIdleTime) {
+			idle_time = 0.0f;
+			randomIdleTime = Random.Range(15.0f, 25.0f);
+			anim.SetTrigger("IdleTrigger");
+		}
 
 		if(waypoint.AwayFromWaypoint(transform, awayDistance)) {
 			moveDir = waypoint.GetDirection(transform);
@@ -52,6 +62,7 @@ public class PenguinController : MonoBehaviour {
 		if(moveDir != storeDir) {
 			chillFlag = true;
 			anim.SetBool("Walking", false);
+			// anim.SetTrigger("IdleTrigger");	
 		}
 
 		storeDir = moveDir;
@@ -73,6 +84,7 @@ public class PenguinController : MonoBehaviour {
 			}
 			else {
 				anim.SetBool("Walking", false);
+				// anim.SetTrigger("IdleTrigger");
 			}
 		}	
 	
