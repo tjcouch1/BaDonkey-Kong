@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class DragonController : MonoBehaviour {
 
-	public GameObject chest;
+	public ChestController chest;
 	public Transform player;
 	public GameObject fireball;
 	public GameObject iceball;
 	public float attack_cooldown = 3.0f;
 	float attackTime = 0.0f;
 	public float engagement_radius = 20.0f;
-	public float rotation_speed = 3.0f;
+	public float rotation_speed = 100.0f;
+	public float ball_speed = 40.0f;
 
 	bool attackflag;
 
@@ -38,9 +39,14 @@ public class DragonController : MonoBehaviour {
 				attackTime += Time.deltaTime;
 				if(attackTime > attack_cooldown) {
 					attack();
+					attackTime = 0.0f;
 				}
+
 				else {
-					transform.LookAt(player);
+					float step = rotation_speed * Time.deltaTime;
+					Vector3 newDir = Vector3.RotateTowards(transform.forward, 
+									 player.position - transform.position, step, 0.0F);
+					transform.rotation = Quaternion.LookRotation(newDir);
 				}
 
 			}
@@ -59,5 +65,28 @@ public class DragonController : MonoBehaviour {
 	void attack() {
 		anim.SetTrigger("Attack");
 		// Attack code
+
+		GameObject fab;
+		if(Random.Range(0, 2) == 1) fab = fireball;
+		else fab = iceball;
+
+		for(int i = 0; i < 3; i++) {
+			GameObject newball = Instantiate(fab);
+			newball.transform.position = transform.position + new Vector3(0, 3, 0);
+			Rigidbody rb = newball.GetComponent<Rigidbody>();
+			rb.angularVelocity = new Vector3(0, rotation_speed, 0);
+
+			Vector3 projec = Quaternion.AngleAxis((i - 1) * 40, Vector3.up) * transform.forward;
+			// Vector3 projec = transform.forward.Rotate(new Vector3(0, (i - 1) * 30, 0));
+			rb.velocity = projec * ball_speed;
+			Destroy(newball, 3.0f);
+		}
+	}
+
+	void OnDestroy() {
+		
 	}
 }
+
+
+
