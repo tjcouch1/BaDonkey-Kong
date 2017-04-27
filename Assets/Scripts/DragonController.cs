@@ -84,7 +84,13 @@ public class DragonController : MonoBehaviour {
 	}
 
 	void OnDestroy() {
-		chest.activate();
+		Debug.Log("SPAWNING KEY");
+		Transform t = Instantiate(chest).transform;
+		t.position = transform.position;
+
+		Rigidbody rb = t.gameObject.GetComponent<Rigidbody>();
+		rb.velocity = new Vector3(0, 15, 0);
+		rb.angularVelocity = new Vector3(15 * 33, 15 * 33, 0);
 	}
 }
 
