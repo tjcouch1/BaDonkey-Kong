@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChestController : MonoBehaviour {
 
@@ -31,6 +32,7 @@ public class ChestController : MonoBehaviour {
 		GameObject obj = other.gameObject;
 		if(obj.tag == "Player" && active) {
 			// Win da game. 
+			SceneManager.LoadScene("Win");
 		}
 	}
 }

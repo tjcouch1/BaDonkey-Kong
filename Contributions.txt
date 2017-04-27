@@ -83,15 +83,19 @@ Molly Sulcer
 		-Music for level1
 		-GameOver
 		-in game help (press end)
+		-Win
 	- Scripts
 		-LoadonClick
 		-QuitOnClick
 		-ButtonNavgation
 		-PauseGame
+		-ChestController
+		-PlayerHealthController
 	- Models
 		- Penguin
 	- ParticleEffects
 		-Around Robot's body
+		-Barrels
 	
 
 
